@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SQLiteDatabase db = EasySQLite.withContext(this).dbName("db").dbVersion(1).withModel(new Model()).getInstance();
+        SQLiteDatabase db = EasySQLite.withContext(this).dbName("db").dbVersion(1).withModel(new ToDoItem()).getInstance();
         //To Create table and insert item
         db.add(new ToDoItem("This is a dummy todo item"));
 
