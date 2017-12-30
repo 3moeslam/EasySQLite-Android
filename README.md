@@ -6,13 +6,13 @@ EasySQLite will help you to manipulate sqlite database without efforts
 
 ## Usage
 To create database
-'''java
+```java
         SQLiteDatabase db = EasySQLite.withContext(this).dbName("db").dbVersion(1).withModel(new ToDoItem()).getInstance();
-'''
+```
 
 To create a table
 First you must create a table model, some class like this
-''' java
+``` java
  @Table(name = "TODO")
     public class ToDoItem {
         @Column(isPrimeryKey = true, isAutoIncrement = true)
@@ -43,12 +43,12 @@ First you must create a table model, some class like this
             this.item = item;
         }
     }
-'''
+```
 
-You can use table annotation ' @Table(name="bla") ' to specify table name or you can not use it and the table name will be *Class name
+You can use table annotation ``` @Table(name="bla") ``` to specify table name or you can not use it and the table name will be *Class name*
 
 For columns you can use column annotation '@Column()' which has some properties
-+ 'name' String - define column name if not used or empty the column will named as variable name
-+ 'isPrimaryKey' boolean - default 'false' used to define if column is primary key or not
-+ 'hasDefaultValue' boolean - default 'false' ,if true the value which assigned to this variable will be a default value
-+ 'isAutoIncrement' bollean - default 'false' , used to define if column is Auto-increment or not
++ ```name``` String - define column name if not used or empty the column will named as variable name
++ ```isPrimaryKey``` boolean - default 'false' used to define if column is primary key or not
++ ```hasDefaultValue``` boolean - default 'false' ,if true the value which assigned to this variable will be a default value
++ ```isAutoIncrement``` boolean - default 'false' , used to define if column is Auto-increment or not
