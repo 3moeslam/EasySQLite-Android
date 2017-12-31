@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity{
         //To Get all Table Records
         List<ToDoItem> list = db.getData(ToDoItem.class,null);
         //Or Add Select Condition
-        List<ToDoItem> conditionList = db.getData(ToDoItem.class,"item like '%test%");
+        List<ToDoItem> conditionList = db.getData(ToDoItem.class,"item like '%test%'");
 
         //To update record
         ToDoItem item = list.get(0);
