@@ -5,19 +5,23 @@ An Android Library make manipulating with sqlite more easier and more funny
 EasySQLite will help you to manipulate sqlite database without efforts
 
 
-## Installition
+## Installation
 
 Add it in your root build.gradle at the end of repositories:
-```allprojects {
+```
+allprojects {
     repositories {
         ...
         maven { url 'https://jitpack.io' }
     }
-}```
+}
+```
+
+
 Add the dependency
 ```
 dependencies {
-        compile 'com.github.3moeslam:EasySQLite-Android:v0.6'
+    compile 'com.github.3moeslam:EasySQLite-Android:v0.6'
 }
 ```
 
