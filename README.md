@@ -70,15 +70,15 @@ For columns you can use column annotation `@Column()` which has some properties
 + ```hasDefaultValue``` boolean - default `false` ,if true the value which assigned to this variable will be a default value
 + ```isAutoIncrement``` boolean - default `false` , used to define if column is Auto-increment or not
 
-*To Create table and insert item*
+**To Create table and insert item**
 `db.add(new ToDoItem("This is a dummy todo item"));`
 
-*To Get all Table Records*
+**To Get all Table Records**
 List<ToDoItem> list = db.getData(ToDoItem.class,null);
 Or Add Select Condition
 List<ToDoItem> conditionList = db.getData(ToDoItem.class,"item like '%test%'");
 
-*To update record*
+**To update record**
 `ToDoItem item = list.get(0);
 item.setItem("Test2");
 db.updateRecord(item);`
@@ -93,7 +93,7 @@ Or Update all table records
 db.updateAllTableRecords(updateAllTableRecords);`
 
 
-*To Delete Record*
+**To Delete Record**
 `db.deleteRecord(list.get(0),null);`
 To delete all table
 `db.deleteTable(new ToDoItem(""));`
