@@ -89,28 +89,38 @@ Or Add Select Condition
 
 **To update record**
 
-```ToDoItem item = list.get(0);
+```
+ToDoItem item = list.get(0);
 item.setItem("Test2");
-db.updateRecord(item);```
+db.updateRecord(item);
+```
 
 
 Or you can update item under condition
 
-```ToDoItem updateWithCondition = new ToDoItem("Test 3");
-db.updateRecord(updateWithCondition,"id=1");```
+```
+ToDoItem updateWithCondition = new ToDoItem("Test 3");
+db.updateRecord(updateWithCondition,"id=1");
+```
 
 Or Update all table records
 
-```ToDoItem updateAllTableRecords = new ToDoItem("All Record Update");
-db.updateAllTableRecords(updateAllTableRecords);```
+```
+ToDoItem updateAllTableRecords = new ToDoItem("All Record Update");
+db.updateAllTableRecords(updateAllTableRecords);
+```
 
 
 **To Delete Record**
 
-```db.deleteRecord(list.get(0),null);```
+```
+db.deleteRecord(list.get(0),null);
+```
 
 To delete all table
 
-```db.deleteTable(new ToDoItem(""));```
+```
+db.deleteTable(new ToDoItem(""));
+```
 
 
